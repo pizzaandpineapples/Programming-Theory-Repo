@@ -15,19 +15,19 @@ public class AnimalBehavior : MonoBehaviour
 
     protected virtual void Move()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             transform.Translate(Vector3.forward * Time.deltaTime * power * speed);
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             transform.Translate(Vector3.back * Time.deltaTime * power * speed);
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             transform.Translate(Vector3.left * Time.deltaTime * power * speed);
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
         {
             transform.Translate(Vector3.right * Time.deltaTime * power * speed);
         }

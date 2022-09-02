@@ -12,41 +12,53 @@ public class HorseBehavior : AnimalBehavior
 
     protected override void Move()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && Input.GetKey(KeyCode.E))
         {
             transform.Translate(Vector3.forward * Time.deltaTime * power * speed);
             transform.Translate(Vector3.forward * Time.deltaTime * power * speed);
             transform.Translate(Vector3.right * Time.deltaTime * power * speed);
         }
-        //if (Input.GetKeyDown(KeyCode.W) && Input.GetKeyDown(KeyCode.A))
-        //{
-        //    transform.Translate(Vector3.forward * Time.deltaTime * power * speed);
-        //    transform.Translate(Vector3.forward * Time.deltaTime * power * speed);
-        //    transform.Translate(Vector3.left * Time.deltaTime * power * speed);
-        //}
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.W) && Input.GetKey(KeyCode.Q))
+        {
+            transform.Translate(Vector3.forward * Time.deltaTime * power * speed);
+            transform.Translate(Vector3.forward * Time.deltaTime * power * speed);
+            transform.Translate(Vector3.left * Time.deltaTime * power * speed);
+        }
+        if (Input.GetKeyDown(KeyCode.S) && Input.GetKey(KeyCode.E))
         {
             transform.Translate(Vector3.back * Time.deltaTime * power * speed);
             transform.Translate(Vector3.back * Time.deltaTime * power * speed);
             transform.Translate(Vector3.left * Time.deltaTime * power * speed);
         }
-        //if (Input.GetKeyDown(KeyCode.S) && Input.GetKeyDown(KeyCode.D))
-        //{
-        //    transform.Translate(Vector3.back * Time.deltaTime * power * speed);
-        //    transform.Translate(Vector3.back * Time.deltaTime * power * speed);
-        //    transform.Translate(Vector3.left * Time.deltaTime * power * speed);
-        //}
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.S) && Input.GetKey(KeyCode.Q))
+        {
+            transform.Translate(Vector3.back * Time.deltaTime * power * speed);
+            transform.Translate(Vector3.back * Time.deltaTime * power * speed);
+            transform.Translate(Vector3.right * Time.deltaTime * power * speed);
+        }
+        if (Input.GetKeyDown(KeyCode.A) && Input.GetKey(KeyCode.E))
         {
             transform.Translate(Vector3.left * Time.deltaTime * power * speed);
             transform.Translate(Vector3.left * Time.deltaTime * power * speed);
             transform.Translate(Vector3.forward * Time.deltaTime * power * speed);
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.A) && Input.GetKey(KeyCode.Q))
+        {
+            transform.Translate(Vector3.left * Time.deltaTime * power * speed);
+            transform.Translate(Vector3.left * Time.deltaTime * power * speed);
+            transform.Translate(Vector3.back * Time.deltaTime * power * speed);
+        }
+        if (Input.GetKeyDown(KeyCode.D) && Input.GetKey(KeyCode.E))
         {
             transform.Translate(Vector3.right * Time.deltaTime * power * speed);
             transform.Translate(Vector3.right * Time.deltaTime * power * speed);
             transform.Translate(Vector3.back * Time.deltaTime * power * speed);
+        }
+        if (Input.GetKeyDown(KeyCode.D) && Input.GetKey(KeyCode.Q))
+        {
+            transform.Translate(Vector3.right * Time.deltaTime * power * speed);
+            transform.Translate(Vector3.right * Time.deltaTime * power * speed);
+            transform.Translate(Vector3.forward * Time.deltaTime * power * speed);
         }
     }
 }
