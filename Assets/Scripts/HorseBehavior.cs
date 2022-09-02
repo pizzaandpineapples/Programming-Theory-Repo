@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HorseBehavior : AnimalBehavior
+public class HorseBehavior : AnimalBehavior // INHERITANCE
 {
     // Update is called once per frame
     void Update()
     {
-        Move();
+        Move(); // ABSTRACTION
     }
 
-    protected override void Move()
+    protected override void Move() // POLYMORPHISM
     {
         if (Input.GetKeyDown(KeyCode.W) && Input.GetKey(KeyCode.E))
         {

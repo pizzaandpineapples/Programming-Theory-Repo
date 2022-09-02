@@ -10,7 +10,7 @@ public class AnimalBehavior : MonoBehaviour
 
     void Update()
     {
-        Move();
+        Move(); // ABSTRACTION
     }
 
     protected virtual void Move()
