@@ -8,6 +8,7 @@ public class HorseBehavior : AnimalBehavior // INHERITANCE
     void Update()
     {
         Move(); // ABSTRACTION
+        SpeedMultiplier();
     }
 
     protected override void Move() // POLYMORPHISM
