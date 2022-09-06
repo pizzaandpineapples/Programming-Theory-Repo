@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class AnimalBehavior : MonoBehaviour
 {
     [SerializeField] protected float power = 10.0f;
-    private float m_speed = 3.0f;
+    [SerializeField] private float m_speed = 3.0f;
 
     public float speed // ENCAPSULATION
     {
@@ -46,11 +46,11 @@ public class AnimalBehavior : MonoBehaviour
         {
             speed = 3.0f;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             speed = 5.0f;
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             speed = 7.0f;
         }
